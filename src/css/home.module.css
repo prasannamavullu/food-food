@@ -1,25 +1,29 @@
-.hove{
+
+ .hove {
     cursor: pointer;
     padding: 5px;
     width: 18rem;
-    
 }
-.hove:hover{
-    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+
+.hove:hover {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
     transition: .2s;
 }
-.cardImage{
+
+.cardImage {
     border-radius: 10px;
     margin-top: 15px;
     height: 16rem;
 }
-.upperData h4{
-    color: rgba(17,17,17,0.849);
+
+.upperData h4 {
+    color: rgba(17, 17, 17, 0.849);
     letter-spacing: .3px;
     font-weight: 500;
 }
-.upperData span{
-    background-color: rgb(36,150,63);
+
+.upperData span {
+    background-color: rgb(36, 150, 63);
     border-radius: 6px;
     color: #fff;
     text-align: center;
@@ -28,33 +32,39 @@
     padding: 2px 1px;
     width: 45px;
 }
-.lowerData{
-height: 35px;
+
+.lowerData {
+    height: 35px;
 }
-.lowerData h5{
+
+.lowerData h5 {
     font-size: 16px;
     letter-spacing: 0.3px;
     font-weight: 400;
-color:rgba(17,17,17,0.849) ;
+    color: rgba(17, 17, 17, 0.849);
 }
 
-.extra{
-    border-bottom: 1px solid rgba(17,17,17,0.449);
+.extra {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.449);
     margin-bottom: 10px;
 }
-.lastData{
+
+.lastData {
     margin-top: 5px;
     margin-bottom: -10px;
 }
-.lastData .limg{
+
+.lastData .limg {
     width: 3rem;
     margin-left: 0;
 }
-.lastData .laimg{
+
+.lastData .laimg {
     width: 2.3rem;
     margin-right: 0;
 }
-.customSpinner{
+
+.customSpinner {
     width: 50px;
     height: 50px;
     border: 5px solid rgba(1, 1, 18, 0.7);
@@ -64,9 +74,115 @@ color:rgba(17,17,17,0.849) ;
 }
 
 @keyframes spin {
-    to{
+    to {
         transform: rotate(360deg);
     }
 }
 
+@media (max-width: 768px) {
+    .hove {
+        width: 14rem;
+    }
 
+    .cardImage {
+        height: 12rem;
+    }
+
+    .upperData h4 {
+        font-size: 1rem;
+    }
+
+    .upperData span {
+        font-size: 11px;
+        width: 35px;
+    }
+
+    .lowerData h5 {
+        font-size: 14px;
+    }
+
+    .lastData .limg {
+        width: 2.5rem;
+    }
+
+    .lastData .laimg {
+        width: 2rem;
+    }
+
+    .customSpinner {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hove {
+        width: 12rem;
+    }
+
+    .cardImage {
+        height: 10rem;
+    }
+
+    .upperData h4 {
+        font-size: 0.9rem;
+    }
+
+    .upperData span {
+        font-size: 10px;
+        width: 30px;
+    }
+
+    .lowerData h5 {
+        font-size: 12px;
+    }
+
+    .lastData .limg {
+        width: 2rem;
+    }
+
+    .lastData .laimg {
+        width: 1.8rem;
+    }
+
+    .customSpinner {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .hove {
+        width: 10rem;
+    }
+
+    .cardImage {
+        height: 8rem;
+    }
+
+    .upperData h4 {
+        font-size: 0.8rem;
+    }
+
+    .upperData span {
+        font-size: 9px;
+        width: 25px;
+    }
+
+    .lowerData h5 {
+        font-size: 10px;
+    }
+
+    .lastData .limg {
+        width: 1.5rem;
+    }
+
+    .lastData .laimg {
+        width: 1.3rem;
+    }
+
+    .customSpinner {
+        width: 20px;
+        height: 20px;
+    }
+}

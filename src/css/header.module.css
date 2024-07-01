@@ -1,12 +1,17 @@
-.cartIcon{
+/* 
+
+
+   .cartIcon {
     position: relative;
     padding: 0;
     margin: 0;
-}
-.cartIcon:hover{
+  }
+  
+  .cartIcon:hover {
     cursor: pointer;
-}
-.badge{
+  }
+  
+  .badge {
     position: absolute;
     top: 15%;
     right: 22%;
@@ -19,7 +24,194 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.headerForm optgroup, .headerForm option{
+  }
+  
+  .headerForm optgroup,
+  .headerForm option {
     text-align: center;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand h4 {
+      font-size: 1.2rem;
+    }
+  
+    .form-control {
+      width: 150px !important;
+    }
+  
+    .form-select {
+      width: 100px !important;
+    }
+  
+    .nav-link .fa-stack {
+      font-size: 1.5rem;
+    }
+  
+    .badge {
+      top: 10%;
+      right: 18%;
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-brand h4 {
+      font-size: 1rem;
+    }
+  
+    .form-control {
+      width: 120px !important;
+    }
+  
+    .form-select {
+      width: 80px !important;
+    }
+  
+    .nav-link .fa-stack {
+      font-size: 1.2rem;
+    }
+  
+    .badge {
+      top: 8%;
+      right: 15%;
+      width: 0.6rem;
+      height: 0.6rem;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .navbar-brand h4 {
+      font-size: 0.8rem;
+    }
+  
+    .form-control {
+      width: 100px !important;
+    }
+  
+    .form-select {
+      width: 60px !important;
+    }
+  
+    .nav-link .fa-stack {
+      font-size: 1rem;
+    }
+  
+    .badge {
+      top: 6%;
+      right: 12%;
+      width: 0.5rem;
+      height: 0.5rem;
+    }
+  }
+   */
+
+
+
+
+   .cartIcon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cartIcon:hover {
+    cursor: pointer;
+  }
+  
+  .badge {
+    position: absolute;
+    top: 15%;
+    right: 22%;
+    z-index: 2;
+    color: aliceblue;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .headerForm optgroup,
+  .headerForm option {
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand h4 {
+      font-size: 1.2rem;
+    }
+  
+    .form-control {
+      width: 150px !important;
+    }
+  
+    .form-select {
+      width: 100px !important;
+    }
+  
+    .nav-link .fa-stack {
+      font-size: 1.5rem;
+    }
+  
+    .badge {
+      top: 10%;
+      right: 18%;
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-brand h4 {
+      font-size: 1rem;
+    }
+  
+    .form-control {
+      width: 120px !important;
+    }
+  
+    .form-select {
+      width: 80px !important;
+    }
+  
+    .nav-link .fa-stack {
+      font-size: 1.2rem;
+    }
+  
+    .badge {
+      top: 8%;
+      right: 15%;
+      width: 0.6rem;
+      height: 0.6rem;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .navbar-brand h4 {
+      font-size: 0.8rem;
+    }
+  
+    .form-control {
+      width: 100px !important;
+    }
+  
+    .form-select {
+      width: 60px !important;
+    }
+  
+    .nav-link .fa-stack {
+      font-size: 1rem;
+    }
+  
+    .badge {
+      top: 6%;
+      right: 12%;
+      width: 0.5rem;
+      height: 0.5rem;
+    }
+  }
+  

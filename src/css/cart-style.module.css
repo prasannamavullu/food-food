@@ -1,10 +1,12 @@
-/* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css);
- */
- @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css);
 
+
+
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css);
 
 .cardDetails {
 }
+
 .productQtyBtn {
   width: 40px;
   height: 40px;
@@ -15,10 +17,12 @@
   font-size: 11px;
   transition: 0.3s;
 }
+
 .productQtyBtn:hover {
   background-color: #5a8dee;
   color: #fff;
 }
+
 .qtyInputBox {
   max-width: 70px;
   padding: 0px 5px;
@@ -32,6 +36,7 @@
   border: 1px solid #dfe3e7;
   transition: 0.3s;
 }
+
 .qtyInputBox:focus {
   color: #475f7b;
   background-color: #fff;
@@ -39,20 +44,24 @@
   outline: 0;
   box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
 }
+
 .productImg img {
   width: 40px;
   height: 40px;
   border-radius: 4px;
 }
+
 .productDelete {
   border: none;
   font-size: 15px;
   transition: 0.3s;
 }
+
 .productDelete:hover {
   background-color: #ff5b5c;
   color: #fff;
 }
+
 .cartEmpty {
   text-align: center;
   padding: 30px;
@@ -74,4 +83,74 @@
 .cartTable th,
 .cartTable td {
   text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .productQtyBtn, .qtyInputBox {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .productImg img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .productDelete {
+    font-size: 12px;
+  }
+
+  .cartEmpty {
+    padding: 20px;
+  }
+
+  .cartEmpty i {
+    font-size: 35px;
+  }
+
+  .cartEmpty p {
+    font-size: 14px;
+  }
+
+  .cartTable th,
+  .cartTable td {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productQtyBtn, .qtyInputBox {
+    width: 25px;
+    height: 25px;
+    font-size: 9px;
+  }
+
+  .productImg img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .productDelete {
+    font-size: 10px;
+  }
+
+  .cartEmpty {
+    padding: 15px;
+  }
+
+  .cartEmpty i {
+    font-size: 30px;
+  }
+
+  .cartEmpty p {
+    font-size: 12px;
+  }
+
+  .cartTable th,
+  .cartTable td {
+    font-size: 10px;
+  }
 }
