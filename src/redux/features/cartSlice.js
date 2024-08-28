@@ -6,7 +6,6 @@ const initialState = {
   searchQuery: '',
 };
 
-// Cart Slice
 const cartSlice = createSlice({
   name: "cartSlice",
   initialState,
@@ -34,7 +33,7 @@ const cartSlice = createSlice({
         state.carts[itemIndex].qnty--;
       }
     },
-    // Remove from Cart
+   
     removeFromCart: (state, action) => {
       state.carts = state.carts.filter((item) => item.id !== action.payload);
     },

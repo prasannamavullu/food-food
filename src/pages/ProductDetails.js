@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useState } from "react";
 import { Button, Card, Col, Row, Spinner } from "react-bootstrap";
 import { useParams } from "react-router-dom";
@@ -62,7 +64,7 @@ const ProductDetailPage = () => {
               <Col md={6}>
                 <Card className="shadow">
                   <Card.Body>
-                    <Card.Title>{product.dish}</Card.Title>
+                    <Card.Title>{product.dish.charAt(0).toUpperCase() + product.dish.slice(1)}</Card.Title>
                     <Card.Text>{product.address}</Card.Text>
                     <Card.Text>{product.somedata}</Card.Text>
                     <Card.Text>Price: ₹{product.price}</Card.Text>
@@ -78,7 +80,7 @@ const ProductDetailPage = () => {
                             variant="outline-secondary"
                             onClick={() => setQuantity(Math.max(1, quantity - 1))}
                           >
-                            -
+                            
                           </Button>
                           <span className="mx-2">{quantity}</span>
                           <Button
@@ -99,7 +101,7 @@ const ProductDetailPage = () => {
             </>
           )}
         </Row>
-      </div>            
+      </div>
     </>
   );
 };

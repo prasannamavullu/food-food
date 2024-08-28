@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 const initialState = {
   isLoading: false,
   data: [],
-  filteredData: [], // Add filteredData to store filtered results
+  filteredData: [], 
   isError: null,
 };
 
@@ -21,7 +21,7 @@ export const fetchDataSlice = createSlice({
   reducers: {
     setFilteredData: (state, action) => {
       const filterValue = action.payload;
-      switch (filterValue) {
+      switch (filterValue)  {
         case "priceLowToHigh":
           state.filteredData = state.data.slice().sort((a, b) => a.price - b.price);
           break;
@@ -48,7 +48,7 @@ export const fetchDataSlice = createSlice({
       .addCase(fetchProducts.fulfilled, (state, action) => {
         state.isLoading = false;
         state.data = action.payload;
-        state.filteredData = action.payload; // Initialize filteredData with fetched data
+        state.filteredData = action.payload; 
       })
       .addCase(fetchProducts.rejected, (state, action) => {
         state.isLoading = false;

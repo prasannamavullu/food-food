@@ -13,7 +13,7 @@ const Footer = () => {
               <h5 className={styles.footerHeading}><img
               src="https://img.freepik.com/premium-vector/initial-fd-script-letter-type-logo-design-with-modern-typography-vector-template-creative-script-letter-fd-logo-vector_616200-1304.jpg"
               alt="Food Crush Logo"
-              style={{ width: "50px", height: "50px", borderRadius: "50%" }} // Adjust width and height here
+              style={{ width: "50px", height: "50px", borderRadius: "50%" }} 
             />Food Crush</h5>
               <p className={styles.footerText}>Your go-to place for delicious food !</p>
             </Col>

@@ -31,7 +31,7 @@ const Home = () => {
 
   const send = (item) => {
     dispatch(addToCart(item));
-    // toast.success("Item Added In Your Cart");
+    
   };
 
   let searchedItems = [];
